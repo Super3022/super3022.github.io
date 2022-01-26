@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(3, 125, 196);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* Sets up the table to display CPD hours, adds a 1px border to all elements. */
+
+.cpd-table{
+    border: 1px solid #333;
+}
+
+.cpd-table th{
+    border: 1px solid #333;
+}
+
+.cpd-table td{
+    border: 1px solid #333;
+}
+
+/* Creates the div container for the whole page */
+
+.container{
+    border: 3px solid #333;
+    background-color: rgb(192, 222, 240);
+}
+
+.nav{
+    border: 3px solid #333;
+    text-align: center;
+}
+/* Removes the bullet points from the ul menu.
+Guidance on creating a CSS navigation bar from W3Schools. */
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Displays the li elements horizontally.*/
+#nav li{
+    float: left;
+    border-right: 1px solid rgb(192, 222, 240);
+}
+
+#nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover{
+    background-color: #111;
+}
+
+/* Controls the header for the page */
+
+.banner{
+    background-color: rgb(192, 222, 240);
+    text-align: center;
+    border: 3px solid #333;
+    font-size: 140%;
+    height: 250px;
+    line-height: 175px;
+
+    /* Inserts a hero Image behind the header text. Code from W3Schools */ 
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Museca_Archina.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.banner h1{
+    color: rgb(255, 255, 255);
+}
+
+/* Controls the main content of the webpage, and sets the width/height and border for the flexboxes. */
+
+.main-content{
+    border: 3px solid #333;
+    width: 99%;
+    height: auto;
+    padding: 5px;
+}
+
+.main-content-2{
+    border: 3px solid #333;
+    width: 99%;
+    height: auto;
+    padding: 5px;
+}
+
+.main-content-contact{
+    border: 3px solid #333;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.cpd{
+    border: 3px solid #333;
+    width: 100%;
+    height: auto;
+}
+
+/* Displays the main content in flexboxes, and displays them in a row. */
+
+.flexbox-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    border: 3px solid #333;
+    text-align: center;
+}
+
+/* This code centers the cpd image, and also helps to keep the interests photo responsive by resizing itself if needed.  */ 
+
+.cpdCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+}
+
+/* Image Row/Column used to float 3 images side by side. Some code used from W3Schools */
+
+.imageRow{
+    display: flex;
+    border-top: 6px solid #333;
+}
+
+.imageColumn{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.interests{
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+}
+
+/* Removes the border from the contact table, and floats the icons to the side. */
+
+.contact{
+    border: none;
+}
+
+.contact img{
+    float: left;
+}
+
+

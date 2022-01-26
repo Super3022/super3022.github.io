@@ -1,0 +1,56 @@
+/* Makes the flexboxes on the homepage to display in a column on smaller screens. - Help from W3Schools used - */
+
+@media screen and (max-width: 800px){
+    .flexbox-main{
+        flex-direction: column;
+    }
+
+    .banner{
+        height: auto;
+    }
+    /* Changes the padding for the main context boxes when the website resizes for a smaller screen. */
+
+    .main-content{
+        padding: 0px;
+    }
+    
+    .main-content-2{
+        padding: 0px;
+    }
+
+    .main-content-contact{
+        padding: 0px;
+        width: 99%
+    }
+
+    /* Changes the font size of the header to fit better on smaller screens */
+
+    .banner{
+        font-size: 60%;
+    }
+
+    /* Unfloats the menu bar so it stacks vertically */
+
+    #nav li{
+        float: none;
+        border-right: 3px solid #fff;
+        width: 100%;
+    }
+
+    .cpd{
+        width: 99%;
+    }
+
+    /* Makes the image take up the full space of the div when on a smaller screen. */
+
+    .interests{
+        max-width: 99%;
+        height: auto;
+        margin-left: 1.5px;
+    }
+
+    .imageRow{
+        flex-direction: column;
+    }
+    
+}
